@@ -7,7 +7,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+     // EXERCISE 1 GO FROM HOST TO CHILD   
         string childPath = Path.GetFullPath(Path.Combine(
             AppContext.BaseDirectory,
             "..", "..", "..", "..",
@@ -43,6 +43,6 @@ class Program
 
         child.WaitForExit();
         Console.WriteLine($"[host] child exited with {child.ExitCode}");
-
+        
     }
 }
